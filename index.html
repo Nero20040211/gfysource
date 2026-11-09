@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="重庆专升本高数与计算机模拟题总入口，按年份查阅讲义、模拟卷、答案解析，进入学习与模考。">
+  <meta name="theme-color" content="#f4f7f8">
+  <title>重庆专升本 · 模拟题总入口</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%23103e4b'/%3E%3Cpath d='M24 16v18m0-18c-4-4-9-5-15-4v18c6-1 11 0 15 4 4-4 9-5 15-4V12c-6-1-11 0-15 4Z' fill='none' stroke='white' stroke-width='2.5' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: system-ui, "Microsoft YaHei", "PingFang SC", sans-serif;
+      color: #19313d;
+      background: #f4f7f8;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; }
+    .wrap { width: min(100% - 48px, 980px); margin-inline: auto; }
+    .site-header { background: #fff; border-bottom: 1px solid #dde6ea; }
+    .brand {
+      min-height: 76px; display: flex; align-items: center; gap: 12px;
+      font-size: 16px; font-weight: 700; letter-spacing: .04em;
+    }
+    .brand-mark {
+      display: grid; place-items: center; width: 38px; height: 38px;
+      border-radius: 11px; background: #103e4b; color: #fff;
+    }
+    .icon {
+      width: 24px; height: 24px; fill: none; stroke: currentColor;
+      stroke-width: 1.65; stroke-linecap: round; stroke-linejoin: round;
+    }
+    main { padding-block: clamp(46px, 8vw, 104px) 48px; }
+    .hero { margin-bottom: clamp(28px, 4vw, 48px); }
+    h1 {
+      margin: 0 0 14px; color: #102d38;
+      font-size: clamp(32px, 5vw, 53px); line-height: 1.18; letter-spacing: -.045em;
+    }
+    .hero p {
+      max-width: 40em; margin: 0; color: #4e626c;
+      font-size: clamp(15px, 2vw, 17px); line-height: 1.8;
+    }
+    .subjects { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+    .subject {
+      --accent: #15675c;
+      --soft: #e8f3ef;
+      display: flex; flex-direction: column;
+      padding: clamp(22px, 3vw, 32px);
+      background: #fff; border: 1px solid #d6e2e6; border-radius: 18px;
+      color: inherit; text-decoration: none; box-shadow: 0 4px 14px #18374208;
+      transition: border-color 140ms ease, box-shadow 140ms ease;
+    }
+    .subject.computer { --accent: #255c83; --soft: #eaf1f8; }
+    .subject:hover { border-color: var(--accent); box-shadow: 0 8px 20px #18374212; }
+    .subject:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+    .subject-meta { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .subject-icon {
+      display: grid; place-items: center; width: 46px; height: 46px;
+      border-radius: 13px; background: var(--soft); color: var(--accent);
+    }
+    .integral { font: 34px/1 Georgia, serif; padding-bottom: 3px; }
+    .years { color: #4a616d; font-size: 13px; font-weight: 650; white-space: nowrap; }
+    h2 { margin: 18px 0 5px; font-size: 26px; line-height: 1.35; }
+    .subject p { margin: 0 0 20px; color: #4e626c; font-size: 15px; line-height: 1.7; }
+    .action {
+      display: flex; justify-content: space-between; align-items: center;
+      margin-top: auto; padding-top: 15px; border-top: 1px solid #e3ebee;
+      color: var(--accent); font-size: 15px; font-weight: 700;
+    }
+    .action .icon { width: 20px; height: 20px; }
+    @media (max-width: 620px) {
+      .wrap { width: calc(100% - 36px); }
+      .brand { min-height: 66px; }
+      .subjects { grid-template-columns: 1fr; gap: 14px; }
+      h2 { font-size: 23px; }
+    }
+    @media (prefers-reduced-motion: reduce) { .subject { transition: none; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M12 5v15M3 4h4c2 0 4 1 5 2 1-1 3-2 5-2h4v14h-4c-2 0-4 1-5 2-1-1-3-2-5-2H3z"/></svg>
+      </span>
+      <span>重庆专升本备考资料</span>
+    </div>
+  </header>
+  <main class="wrap">
+    <div class="hero">
+      <h1>模拟题总入口</h1>
+      <p>选科目和年份，查看知识讲义、模拟卷和答案解析，或进入网页模考。</p>
+    </div>
+    <nav class="subjects" aria-label="按科目选择">
+      <a class="subject math" href="./math/index.html" aria-labelledby="math-title" aria-describedby="math-details">
+        <div class="subject-meta"><span class="subject-icon integral" aria-hidden="true">∫</span><span class="years">2005—2026</span></div>
+        <h2 id="math-title">高等数学</h2>
+        <p id="math-details">8 组资料 · 27 套模拟卷</p>
+        <span class="action">进入高数题库<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+      </a>
+      <a class="subject computer" href="./computer/index.html" aria-labelledby="computer-title" aria-describedby="computer-details">
+        <div class="subject-meta">
+          <span class="subject-icon" aria-hidden="true">
+            <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="13" rx="2"/><path d="M8 21h8m-4-5v5M9 7l-3 3 3 3m6-6 3 3-3 3"/></svg>
+          </span>
+          <span class="years">2014—2026</span>
+        </div>
+        <h2 id="computer-title">计算机</h2>
+        <p id="computer-details">6 组资料 · 22 套模拟卷</p>
+        <span class="action">进入计算机题库<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+      </a>
+    </nav>
+  </main>
+</body>
+</html>

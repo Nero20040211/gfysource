@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="重庆专升本高数复习资料总入口：按年份打开学习网页、知识讲义、27套模拟卷与详细解析。">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; font-src 'none'; connect-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <title>重庆专升本高数 · 模拟题总入口</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23103e4b'/%3E%3Ctext x='32' y='45' text-anchor='middle' fill='white' font-size='46'%3E%E2%88%AB%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f7f8;
+      --surface: #ffffff;
+      --ink: #19313d;
+      --muted: #60727c;
+      --line: #dce5e9;
+      --teal: #166d62;
+      --teal-soft: #e9f4ef;
+      --navy: #103e4b;
+      --focus: #087eaa;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif;
+      font-synthesis: none;
+    }
+    * { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+    html { scroll-behavior: smooth; scroll-padding-top: 24px; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font-size: 15px; line-height: 1.6; }
+    a { color: inherit; text-decoration: none; }
+    button, input { font: inherit; }
+    button, a, input { -webkit-tap-highlight-color: transparent; }
+    a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+    button { cursor: pointer; }
+    svg { display: block; flex: 0 0 auto; }
+    .icon { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+    .symbols { position: absolute; width: 0; height: 0; overflow: hidden; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+    .skip-link { position: absolute; z-index: 10; left: 20px; top: -100px; padding: 10px 18px; color: white; background: var(--navy); border-radius: 6px; }
+    .skip-link:focus { top: 12px; }
+    .wrap { width: min(1180px, calc(100% - 64px)); margin-inline: auto; }
+    .site-header { background: var(--surface); border-top: 4px solid var(--navy); border-bottom: 1px solid var(--line); }
+    .header-inner { min-height: 83px; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+    .brand { display: flex; align-items: center; gap: 13px; }
+    .brand-mark { display: grid; place-items: center; width: 42px; height: 44px; border-radius: 12px; background: var(--navy); color: white; font-family: Georgia, serif; font-size: 34px; line-height: 1; padding-bottom: 4px; }
+    .brand-title { margin: 0; font-size: 17px; font-weight: 700; letter-spacing: .02em; }
+    .brand-subtitle { margin: 1px 0 0; color: var(--muted); font-size: 12px; letter-spacing: .08em; }
+    .back-link { display: inline-flex; flex: 0 0 auto; align-items: center; min-height: 44px; padding: 0 10px; border: 1px solid var(--line); border-radius: 10px; color: var(--teal); font-size: 13px; font-weight: 650; white-space: nowrap; }
+    .back-link:hover { background: var(--teal-soft); }
+    .hero { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 40px; padding-top: 57px; padding-bottom: 45px; }
+    .eyebrow { margin: 0 0 12px; display: flex; align-items: center; gap: 10px; color: var(--teal); font-size: 12px; font-weight: 650; letter-spacing: .12em; }
+    .eyebrow::before { content: ""; width: 25px; height: 2px; background: #6fafa0; }
+    h1 { margin: 0 0 14px; font-size: clamp(27px, 3vw, 38px); font-weight: 720; letter-spacing: -.035em; line-height: 1.35; }
+    .hero-copy { margin: 0; color: var(--muted); line-height: 1.9; font-size: 14px; }
+    .stats { margin: 0; padding: 0 0 0 20px; display: flex; align-items: flex-start; gap: 0; }
+    .stat { display: flex; flex-direction: column; padding: 3px 24px 2px; min-width: 106px; border-left: 1px solid #d5e2e4; }
+    .stat:first-child { border-left: 0; }
+    .stat dt { order: 2; color: var(--muted); font-size: 12px; }
+    .stat dd { order: 1; margin: 0 0 2px; font-family: "Segoe UI", sans-serif; font-size: 34px; font-weight: 650; letter-spacing: -.04em; font-variant-numeric: tabular-nums; line-height: 1.3; }
+    .stat:nth-child(2) dd { color: var(--teal); }
+    .recent { margin-bottom: 27px; border: 1px solid #cfe3db; border-radius: 12px; background: #edf5f1; }
+    .recent-link { min-height: 65px; display: flex; align-items: center; gap: 14px; padding: 13px 21px; border-radius: inherit; }
+    .recent-icon { color: var(--teal); }
+    .recent-label { color: #547267; font-size: 12px; }
+    .recent-name { font-weight: 650; font-size: 14px; }
+    .recent-action { margin-left: auto; display: flex; align-items: center; gap: 9px; color: #195c4d; font-size: 13px; font-weight: 650; white-space: nowrap; }
+    .library { padding-bottom: 38px; }
+    .library-head { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 21px 0 22px; border-top: 1px solid var(--line); }
+    h2 { margin: 0; font-size: 20px; font-weight: 680; letter-spacing: -.02em; }
+    .library-note { margin: 4px 0 0; color: var(--muted); font-size: 12px; }
+    .search { position: relative; display: flex; align-items: center; width: 324px; flex-shrink: 0; min-height: 46px; border: 1px solid #cedce2; border-radius: 10px; background: white; transition: border-color .15s, box-shadow .15s; }
+    .search:focus-within { border-color: var(--focus); box-shadow: 0 0 0 3px #e4f0f6; }
+    .search > .icon { color: #677e89; margin-left: 15px; }
+    .search input { width: 100%; min-width: 0; height: 44px; padding: 0 44px 0 11px; border: 0; border-radius: inherit; background: transparent; color: var(--ink); font-size: 13px; }
+    .search input::placeholder { color: #6c7b84; opacity: 1; }
+    .search input:focus-visible { outline: none; }
+    .search input::-webkit-search-cancel-button { -webkit-appearance: none; }
+    .clear-search { position: absolute; right: 4px; display: grid; place-items: center; width: 38px; height: 38px; padding: 0; border: 0; border-radius: 7px; color: var(--muted); background: transparent; }
+    .clear-search:hover { background: #eef3f5; color: var(--ink); }
+    .result-status { margin: -7px 0 18px; color: var(--muted); font-size: 12px; }
+    .card-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+    .pack-card { position: relative; display: flex; flex-direction: column; min-width: 0; padding: 24px; border: 1px solid var(--line); border-radius: 15px; background: white; box-shadow: 0 3px 5px -4px #2448591c; transition: border-color .18s, box-shadow .18s, transform .18s; }
+    .pack-card:hover { border-color: #a9c9c3; box-shadow: 0 8px 22px -10px #24485928; transform: translateY(-2px); }
+    .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+    .year { margin: 0; color: #203f4b; font-family: "Segoe UI", "Microsoft YaHei", sans-serif; font-size: 32px; font-weight: 650; letter-spacing: -.045em; line-height: 1.2; }
+    .year.range { font-size: 27px; letter-spacing: -.04em; line-height: 1.42; }
+    .pack-kind { margin: 5px 0 0; color: var(--muted); font-size: 12px; }
+    .pack-count { margin-top: 4px; padding: 3px 10px; border-radius: 20px; background: var(--teal-soft); color: #226658; font-size: 11px; font-weight: 650; white-space: nowrap; }
+    .pack-meta { margin: 16px 0 20px; color: #657780; font-size: 12px; }
+    .pack-meta span + span::before { content: "·"; padding: 0 7px; color: #81929a; }
+    .pdf-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+    .resource-link { min-height: 43px; display: flex; align-items: center; justify-content: center; gap: 7px; padding: 8px 5px; border: 1px solid #dce6ea; border-radius: 8px; color: #3e5b67; font-size: 12px; font-weight: 550; transition: background .15s, border-color .15s; }
+    .resource-link .icon { width: 16px; height: 16px; color: #63828c; }
+    .resource-link:hover { border-color: #8db8b0; background: #f1f8f5; }
+    .paper-label { margin: 19px 0 8px; color: #657780; font-size: 11px; }
+    .paper-links { display: flex; gap: 7px; margin-bottom: 22px; }
+    .paper-link { min-height: 40px; min-width: 0; flex: 1; display: grid; place-items: center; border: 1px solid #dce6ea; border-radius: 7px; color: #3e5b67; font-family: "Segoe UI", "Microsoft YaHei", sans-serif; font-size: 12px; font-weight: 600; font-variant-numeric: tabular-nums; transition: background .15s, border-color .15s; }
+    .paper-link:hover { border-color: #8db8b0; background: #f1f8f5; color: #1d6154; }
+    .study-link { display: flex; align-items: center; justify-content: space-between; gap: 10px; min-height: 45px; margin-top: auto; padding: 10px 15px; border: 1px solid var(--navy); border-radius: 8px; background: var(--navy); color: white; font-size: 13px; font-weight: 600; transition: background .15s, border-color .15s; }
+    .study-link .icon { width: 17px; height: 17px; opacity: .8; }
+    .study-link:hover { background: #1a5c65; border-color: #1a5c65; }
+    .empty-state { padding: 61px 20px; text-align: center; border: 1px dashed #c9dbe0; border-radius: 14px; background: #ffffffa6; }
+    .empty-state > .icon { margin: 0 auto 16px; width: 31px; height: 31px; color: #7d9a9e; }
+    .empty-state h3 { margin: 0 0 8px; font-size: 18px; font-weight: 650; }
+    .empty-state p { margin: 0 auto 21px; color: var(--muted); font-size: 13px; max-width: 420px; overflow-wrap: anywhere; }
+    .reset-button { min-height: 42px; padding: 8px 20px; border: 1px solid #b6d2c9; border-radius: 8px; color: #205e50; background: #edf5f1; font-size: 13px; }
+    .use-guide { margin: 0 0 34px; padding: 24px 28px; border: 1px solid var(--line); border-radius: 13px; background: #eef2f4; }
+    .guide-heading { display: flex; align-items: center; gap: 9px; margin: 0 0 15px; font-size: 14px; font-weight: 650; }
+    .guide-heading .icon { color: #50757a; width: 18px; height: 18px; }
+    .learning-flow { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin: 0 0 15px; padding: 0; list-style: none; font-size: 12px; color: #49616b; }
+    .learning-flow li { display: flex; align-items: center; gap: 10px; }
+    .step-num { width: 22px; height: 22px; display: grid; place-items: center; border: 1px solid #ccdbe0; border-radius: 50%; font-size: 10px; color: #486876; background: #f8fafb; }
+    .step-arrow { margin-left: 4px; color: #8c9ea5; }
+    .portability-note { margin: 0; padding-top: 15px; border-top: 1px solid #d8e1e5; color: #60727c; font-size: 12px; line-height: 1.9; }
+    .portability-note strong { font-weight: 600; color: #465f6b; }
+    .site-footer { padding: 0 0 30px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px 20px; color: #667984; font-size: 11px; }
+    .noscript { padding: 18px; margin-bottom: 24px; background: white; border: 1px solid var(--line); border-radius: 8px; }
+    @media (min-width: 1200px) { .hero-copy br { display: none; } }
+    @media (max-width: 1099px) {
+      .hero { gap: 22px; }
+      .stats { padding-left: 0; }
+      .stat { min-width: 85px; padding-inline: 16px; }
+      .stat dd { font-size: 30px; }
+      .card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 699px) {
+      .wrap { width: calc(100% - 36px); }
+      .header-inner { min-height: 76px; gap: 12px; }
+      .brand { gap: 10px; }
+      .brand-title { font-size: 15px; }
+      .brand-subtitle { font-size: 11px; }
+      .brand-mark { width: 36px; height: 39px; font-size: 29px; border-radius: 10px; }
+      .hero { grid-template-columns: 1fr; gap: 25px; padding-top: 34px; padding-bottom: 28px; }
+      .eyebrow { margin-bottom: 12px; font-size: 11px; }
+      h1 { margin-bottom: 12px; font-size: 27px; }
+      .hero-copy { font-size: 12px; }
+      .stats { padding: 0; }
+      .stat { flex: 1; min-width: 0; padding: 0 0 0 22px; }
+      .stat:first-child { padding-left: 0; }
+      .stat dd { font-size: 29px; }
+      .stat dt { font-size: 11px; }
+      .recent { margin-bottom: 21px; }
+      .recent-link { padding: 13px 15px; gap: 10px; }
+      .recent-name { font-size: 12px; }
+      .recent-action { font-size: 12px; gap: 6px; }
+      .recent-label { font-size: 11px; }
+      .library-head { align-items: stretch; flex-direction: column; gap: 17px; padding-top: 23px; padding-bottom: 21px; }
+      h2 { font-size: 19px; }
+      .search { width: 100%; }
+      .card-grid { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+      .pack-card { padding: 23px; border-radius: 13px; }
+      .pack-meta { margin-top: 14px; }
+      .paper-link { min-height: 43px; }
+      .resource-link { min-height: 44px; }
+      .study-link { min-height: 46px; }
+      .use-guide { padding: 21px; margin-bottom: 24px; }
+      .learning-flow { gap: 9px 10px; }
+      .learning-flow li { gap: 6px; }
+      .step-arrow { margin-left: 1px; }
+      .site-footer { padding-bottom: 24px; }
+    }
+    @media (max-width: 359px) {
+      h1 { font-size: 24px; }
+      .pack-card { padding: 19px; }
+      .pack-meta { font-size: 11px; }
+      .pack-meta span + span::before { padding-inline: 6px; }
+      .paper-links { gap: 5px; }
+      .recent-icon { display: none; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; }
+      .pack-card:hover { transform: none; }
+    }
+    @media print {
+      body { background: white; }
+      .wrap { width: 100%; }
+      .search, .recent, .back-link, .result-status, .skip-link { display: none; }
+      .hero { padding-block: 24px; }
+      .card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .pack-card { break-inside: avoid; box-shadow: none; }
+      .study-link { color: var(--ink); background: white; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#library">跳到资料目录</a>
+  <svg class="symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-open" viewBox="0 0 24 24"><path d="M14 4h6v6m0-6L10 14M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 5v15M3 4h4c2 0 4 1 5 2 1-1 3-2 5-2h4v15h-4c-2 0-4 0-5 1-1-1-3-1-5-1H3z"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H5v18h14V8zm0 0v5h5M8 12h8m-8 4h6"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-history" viewBox="0 0 24 24"><path d="M3 11a9 9 0 1 1 2.7 7M3 5v6h6m3-4v5l3 2"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="5" r="2"/><circle cx="18" cy="19" r="2"/><path d="M6 7v7a5 5 0 0 0 10 0V9a5 5 0 0 0-10 0m12 8v-7"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">∫</span>
+        <div><p class="brand-title">重庆专升本高数</p><p class="brand-subtitle">模拟题总入口</p></div>
+      </div>
+      <a class="back-link" href="../index.html">返回总入口</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">2005—2026 · 真题配套资料</p>
+        <h1 id="page-title">高数复习，从这里开始。</h1>
+        <p class="hero-copy">选一个年份，读讲义、做模拟卷、对照解析。<br>也可以进入学习网页，按自己的节奏练习与模考。</p>
+      </div>
+      <dl class="stats" aria-label="资料总览">
+        <div class="stat"><dt>年份资料包</dt><dd>8</dd></div>
+        <div class="stat"><dt>原创模拟卷</dt><dd>27</dd></div>
+        <div class="stat"><dt>PDF 资料</dt><dd>43</dd></div>
+      </dl>
+    </section>
+
+    <aside class="recent" id="recent" aria-label="最近打开的学习包" hidden>
+      <a class="recent-link" id="recent-link" target="_blank" rel="noopener">
+        <svg class="icon recent-icon" aria-hidden="true"><use href="#i-history"/></svg>
+        <span><span class="recent-label">上次打开</span><br><span class="recent-name" id="recent-name"></span></span>
+        <span class="recent-action">继续学习<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </a>
+    </aside>
+
+    <section class="library" id="library" aria-labelledby="library-title">
+      <div class="library-head">
+        <div><h2 id="library-title">按年份选择资料</h2><p class="library-note">学习网页与 PDF 均在新标签页打开</p></div>
+        <div class="search" role="search">
+          <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
+          <label for="year-search" class="sr-only">搜索年份或资料包名称</label>
+          <input id="year-search" type="search" placeholder="搜索年份，如 2024 / 2012" autocomplete="off" spellcheck="false" aria-controls="pack-grid" aria-describedby="result-status">
+          <button class="clear-search" id="clear-search" type="button" aria-label="清空搜索" hidden><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+        </div>
+      </div>
+      <p class="result-status" id="result-status" role="status" aria-live="polite" aria-atomic="true">共 8 个资料包，按年份从近到远排列</p>
+      <div class="card-grid" id="pack-grid"></div>
+      <div class="empty-state" id="empty-state" hidden>
+        <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
+        <h3>没有找到对应资料</h3>
+        <p id="empty-description">试试具体年份；2005—2019 的资料统一收录在历年合集中。</p>
+        <button class="reset-button" id="reset-search" type="button">清空搜索，查看全部年份</button>
+      </div>
+      <noscript><p class="noscript">请使用开启 JavaScript 的浏览器打开本页。也可以直接打开同一文件夹里的各年份 HTML 学习网页。</p></noscript>
+    </section>
+
+    <section class="use-guide" aria-labelledby="guide-title">
+      <h2 class="guide-heading" id="guide-title"><svg class="icon" aria-hidden="true"><use href="#i-route"/></svg>建议这样使用</h2>
+      <ol class="learning-flow">
+        <li><span class="step-num" aria-hidden="true">1</span>知识讲义<span class="step-arrow" aria-hidden="true">→</span></li>
+        <li><span class="step-num" aria-hidden="true">2</span>配套练习<span class="step-arrow" aria-hidden="true">→</span></li>
+        <li><span class="step-num" aria-hidden="true">3</span>模拟训练<span class="step-arrow" aria-hidden="true">→</span></li>
+        <li><span class="step-num" aria-hidden="true">4</span>解析与错题复盘</li>
+      </ol>
+      <p class="portability-note"><strong>本机预览：</strong>解压完整站点后，打开根目录的 index.html，即可使用学习网页、PDF 和原卷图片。</p>
+    </section>
+  </main>
+
+  <footer class="wrap site-footer">
+    <span>重庆专升本 · 高等数学复习资料</span>
+  </footer>
+
+  <script id="catalogue" type="application/json">
+    [
+      {"id":"2026","start":2026,"end":2026,"folder":"2026高数真题配套","study":"2026高数真题配套.html","papers":["A","B","C"]},
+      {"id":"2025","start":2025,"end":2025,"folder":"2025高数真题配套","study":"2025高数真题配套.html","papers":["A","B","C"]},
+      {"id":"2024","start":2024,"end":2024,"folder":"2024高数真题配套","study":"2024高数真题配套.html","papers":["A","B","C"]},
+      {"id":"2023","start":2023,"end":2023,"folder":"2023高数真题配套","study":"2023高数真题配套.html","papers":["A","B","C"]},
+      {"id":"2022","start":2022,"end":2022,"folder":"2022高数真题配套","study":"2022高数真题配套.html","papers":["A","B","C"]},
+      {"id":"2021","start":2021,"end":2021,"folder":"2021高数真题配套","study":"2021高数真题配套.html","papers":["A","B","C"]},
+      {"id":"2020","start":2020,"end":2020,"folder":"2020高数真题配套","study":"2020高数真题配套.html","papers":["A","B","C"]},
+      {"id":"2005-2019","start":2005,"end":2019,"folder":"2005-2019高数真题配套","study":"2005-2019高数真题配套.html","papers":["A","B","C","D","E","F"]}
+    ]
+  </script>
+  <script>
+    (() => {
+      "use strict";
+      const packs = JSON.parse(document.getElementById("catalogue").textContent);
+      const grid = document.getElementById("pack-grid");
+      const search = document.getElementById("year-search");
+      const clearButton = document.getElementById("clear-search");
+      const status = document.getElementById("result-status");
+      const emptyState = document.getElementById("empty-state");
+      const recent = document.getElementById("recent");
+      const recentLink = document.getElementById("recent-link");
+      const storageKey = "cq-gaoshu-portal:recent:v1";
+      const icon = name => `<svg class="icon" aria-hidden="true"><use href="#i-${name}"/></svg>`;
+      const relativeURL = (...parts) => "./" + parts.map(encodeURIComponent).join("/");
+      const label = pack => pack.start === pack.end ? `${pack.start} 年真题配套` : `${pack.start}—${pack.end} 历年合集`;
+      const resourceLink = (pack, file, text, symbol) => `<a class="resource-link" href="${relativeURL(pack.folder, file)}" target="_blank" rel="noopener" aria-label="${label(pack)} · ${text} PDF（新标签页）">${icon(symbol)}<span>${text}</span></a>`;
+
+      grid.innerHTML = packs.map(pack => {
+        const combined = pack.start !== pack.end;
+        const handbook = combined ? "知识点精讲与历年题目索引.pdf" : "知识点精讲手册.pdf";
+        const answers = combined ? "六套答案与详细解析.pdf" : "三套答案与详细解析.pdf";
+        const paperLinks = pack.papers.map(paper => `<a class="paper-link" href="${relativeURL(pack.folder, `模拟卷${paper}.pdf`)}" target="_blank" rel="noopener" aria-label="${label(pack)} · 模拟卷 ${paper} PDF（新标签页）">${paper} 卷</a>`).join("");
+        return `<article class="pack-card" data-pack="${pack.id}" aria-labelledby="year-${pack.id}">
+          <div class="card-top">
+            <div><h3 class="year${combined ? " range" : ""}" id="year-${pack.id}">${combined ? "2005—2019" : pack.start}</h3><p class="pack-kind">${combined ? "十五年真题配套 · 合集" : "重庆专升本 · 真题配套"}</p></div>
+            <span class="pack-count">${pack.papers.length} 套模拟卷</span>
+          </div>
+          <p class="pack-meta"><span>每卷 21 题</span><span>120 分</span><span>建议 120 分钟</span></p>
+          <div class="pdf-links">${resourceLink(pack, handbook, "知识讲义", "book")}${resourceLink(pack, answers, "答案解析", "file")}</div>
+          <p class="paper-label">模拟卷 PDF · 打印作答</p>
+          <div class="paper-links" aria-label="${label(pack)}模拟卷">${paperLinks}</div>
+          <a class="study-link" href="${relativeURL(pack.study)}" data-study="${pack.id}" target="_blank" rel="noopener" aria-label="进入${label(pack)}学习与模考（新标签页）"><span>进入学习与模考</span>${icon("open")}</a>
+        </article>`;
+      }).join("");
+
+      const cards = Array.from(grid.children);
+      const normalise = value => value.normalize("NFKC").toLowerCase().replace(/[—–－]/g, "-").trim();
+      function matches(pack, query) {
+        const tokens = normalise(query).split(/\s+/).filter(Boolean);
+        const text = normalise(`${pack.id} ${pack.folder} ${label(pack)} ${pack.start !== pack.end ? "合集 历年 十五年" : "单年"}`);
+        return tokens.every(token => {
+          const yearMatch = token.match(/^(\d{4})年?$/);
+          if (yearMatch) return Number(yearMatch[1]) >= pack.start && Number(yearMatch[1]) <= pack.end;
+          return text.includes(token);
+        });
+      }
+      function filterPacks() {
+        const query = search.value.trim();
+        let count = 0;
+        packs.forEach((pack, index) => {
+          const visible = matches(pack, query);
+          cards[index].hidden = !visible;
+          if (visible) count += 1;
+        });
+        clearButton.hidden = search.value.length === 0;
+        emptyState.hidden = count !== 0;
+        grid.hidden = count === 0;
+        status.textContent = query ? `找到 ${count} 个资料包` : `共 ${packs.length} 个资料包，按年份从近到远排列`;
+        if (count === 0) {
+          document.getElementById("empty-description").textContent = `没有与“${query}”匹配的资料。试试具体年份，2005—2019 的资料收录在历年合集中。`;
+        }
+      }
+      function resetSearch() {
+        search.value = "";
+        filterPacks();
+        search.focus();
+      }
+      function showRecent(pack) {
+        document.getElementById("recent-name").textContent = label(pack);
+        recentLink.href = relativeURL(pack.study);
+        recentLink.dataset.study = pack.id;
+        recentLink.setAttribute("aria-label", `继续${label(pack)}学习与模考（新标签页）`);
+        recent.hidden = false;
+      }
+      function rememberOpen(event) {
+        if (event.type === "auxclick" && event.button !== 1) return;
+        const link = event.target.closest("a[data-study]");
+        if (!link) return;
+        const pack = packs.find(item => item.id === link.dataset.study);
+        if (!pack) return;
+        try { localStorage.setItem(storageKey, JSON.stringify({ id: pack.id })); } catch (_) { /* 链接在无法保存记录时仍正常打开。 */ }
+        showRecent(pack);
+      }
+      try {
+        const saved = JSON.parse(localStorage.getItem(storageKey));
+        const pack = packs.find(item => item.id === saved?.id);
+        if (pack) showRecent(pack);
+      } catch (_) { /* 忽略不可用或损坏的入口记录。 */ }
+      search.addEventListener("input", filterPacks);
+      search.addEventListener("keydown", event => {
+        if (event.key === "Escape") { event.preventDefault(); resetSearch(); }
+        if (event.key === "Enter") event.preventDefault();
+      });
+      clearButton.addEventListener("click", resetSearch);
+      document.getElementById("reset-search").addEventListener("click", resetSearch);
+      document.addEventListener("click", rememberOpen);
+      document.addEventListener("auxclick", rememberOpen);
+      document.addEventListener("keydown", event => {
+        const editing = event.target.closest("input, textarea, select, [contenteditable]");
+        if (event.key === "/" && !editing && !event.ctrlKey && !event.metaKey && !event.altKey) {
+          event.preventDefault();
+          search.focus();
+        }
+      });
+      filterPacks();
+    })();
+  </script>
+</body>
+</html>
